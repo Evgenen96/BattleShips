@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" stylesheets="game2/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game2.fxPreparingStage">
+   <children>
+      <AnchorPane fx:id="ap1" accessibleRole="BUTTON" layoutX="-3.0" layoutY="-2.0" prefHeight="489.0" prefWidth="1000.0">
+         <children>
+            <GridPane fx:id="ownBoardNode" hgap="1.0" layoutX="295.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="410.0" vgap="1.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="cell00" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="cell01" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                  <ImageView fx:id="cell02" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+                  <ImageView fx:id="cell03" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+                  <ImageView fx:id="cell04" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" />
+                  <ImageView fx:id="cell05" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" />
+                  <ImageView fx:id="cell06" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" />
+                  <ImageView fx:id="cell07" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" />
+                  <ImageView fx:id="cell08" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" />
+                  <ImageView fx:id="cell09" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" />
+                  <ImageView fx:id="cell10" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell11" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell12" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell13" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell14" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell15" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell16" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell17" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell18" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell19" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cell20" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell21" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell22" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell23" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell24" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell25" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell26" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell27" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell28" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell29" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cell30" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell31" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell32" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell33" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell34" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell35" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell36" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell37" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell38" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell39" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cell40" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell41" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell42" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell43" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell44" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell45" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell46" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell47" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell48" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell49" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cell50" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell51" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell52" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell53" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell54" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell55" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell56" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell57" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell58" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell59" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cell60" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell61" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell62" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell63" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell64" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell65" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell66" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell67" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell68" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell69" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cell70" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell71" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell72" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell73" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell74" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell75" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell76" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell77" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell78" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell79" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cell80" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell81" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell82" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell83" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell84" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell85" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell86" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell87" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell88" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell89" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cell90" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cell91" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cell92" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cell93" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cell94" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cell95" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cell96" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cell97" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cell98" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cell99" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cellClick" onMouseMoved="#cellPointer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="enemyBoardNode" disable="true" hgap="1.0" layoutX="555.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="410.0" vgap="1.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="40.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="cekk00" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="cekk01" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                  <ImageView fx:id="cekk02" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+                  <ImageView fx:id="cekk03" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+                  <ImageView fx:id="cekk04" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" />
+                  <ImageView fx:id="cekk05" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" />
+                  <ImageView fx:id="cekk06" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" />
+                  <ImageView fx:id="cekk07" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" />
+                  <ImageView fx:id="cekk08" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" />
+                  <ImageView fx:id="cekk09" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" />
+                  <ImageView fx:id="cekk10" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk11" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk12" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk13" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk14" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk15" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk16" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk17" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk18" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk19" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                  <ImageView fx:id="cekk20" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk21" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk22" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk23" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk24" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk25" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk26" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk27" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk28" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk29" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                  <ImageView fx:id="cekk30" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk31" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk32" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk33" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk34" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk35" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk36" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk37" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk38" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk39" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                  <ImageView fx:id="cekk40" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk41" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk42" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk43" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk44" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk45" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk46" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk47" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk48" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk49" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                  <ImageView fx:id="cekk50" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk51" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk52" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk53" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk54" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk55" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk56" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk57" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk58" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk59" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+                  <ImageView fx:id="cekk60" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk61" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk62" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk63" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk64" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk65" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk66" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk67" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk68" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk69" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+                  <ImageView fx:id="cekk70" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk71" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk72" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk73" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk74" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk75" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk76" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk77" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk78" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk79" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+                  <ImageView fx:id="cekk80" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk81" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk82" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk83" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk84" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk85" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk86" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk87" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk88" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk89" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                  <ImageView fx:id="cekk90" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cekk91" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cekk92" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cekk93" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cekk94" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cekk95" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cekk96" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cekk97" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cekk98" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                  <ImageView fx:id="cekk99" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#gameClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+               </children>
+            </GridPane>
+            <Button fx:id="bt2" alignment="CENTER" layoutX="331.0" layoutY="201.0" mnemonicParsing="false" onAction="#shipBtClick" pickOnBounds="false" prefHeight="101.0" prefWidth="338.0" text="Новая игра" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="47.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="transparent-background" />
+                  <String fx:value="buttons" />
+               </styleClass>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.21428571428571436">
+                     <stops>
+                        <Stop color="#acf3ff" />
+                        <Stop color="#a1f1ff" offset="0.007662835249042145" />
+                        <Stop color="#01004a" offset="0.9923371647509578" />
+                        <Stop color="#75edff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow color="#80d2ff" height="80.06" radius="34.34" width="59.3" />
+               </effect></Button>
+            <Label fx:id="label1" layoutX="80.0" prefHeight="30.0" prefWidth="186.0" styleClass="transparent-background" text="Ваше поле:" textFill="#0a7bc6" visible="false">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#90cdff" height="20.76" radius="8.3975" width="14.83" />
+               </effect>
+            </Label>
+            <Label fx:id="label2" layoutX="600.0" prefHeight="32.0" prefWidth="200.0" styleClass="transparent-background" text="Поле противника:" textFill="#0a7bc6" visible="false">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#90cdff" height="20.76" radius="8.3975" width="14.83" />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="1000.0" style="-fx-background-color: gray;">
+         <children>
+            <Button fx:id="startGameBt" alignment="CENTER" layoutX="431.0" layoutY="70.0" mnemonicParsing="false" onAction="#startGameBtClick" text="Начать игру" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="408.0" layoutY="110.0" prefHeight="39.0" prefWidth="184.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="autoSetBt" alignment="CENTER" layoutX="413.0" layoutY="20.0" mnemonicParsing="false" onAction="#autoSetBtClick" text="Авторастановка" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Pane fx:id="footer" layoutX="4.0" layoutY="3.0" visible="false">
+               <children>
+                  <AnchorPane fx:id="ap2" layoutX="156.0" layoutY="8.0" prefHeight="134.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="30.0" prefWidth="122.0" scaleShape="false">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Pane pickOnBounds="false" prefHeight="200.0" prefWidth="200.0" styleClass="ships" />
+                              <Pane pickOnBounds="false" prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="1" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="2" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="3" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </GridPane>
+                        <GridPane layoutY="36.0" prefHeight="30.0" prefWidth="92.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="1" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="2" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </GridPane>
+                        <GridPane layoutY="72.0" prefHeight="30.0" prefWidth="62.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="1" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </GridPane>
+                        <GridPane layoutY="108.0" prefHeight="30.0" prefWidth="40.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </GridPane>
+                        <TextField fx:id="fxAmount4" editable="false" focusTraversable="false" layoutX="121.0" layoutY="-6.0" prefHeight="40.0" prefWidth="48.0" style="-fx-text-fill: white;" styleClass="transparent-background" text="x 1">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="fxAmount3" editable="false" focusTraversable="false" layoutX="92.0" layoutY="31.0" prefHeight="38.0" prefWidth="48.0" style="-fx-text-fill: white;" styleClass="transparent-background" text="x 2">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="fxAmount2" editable="false" focusTraversable="false" layoutX="62.0" layoutY="67.0" prefHeight="38.0" prefWidth="48.0" style="-fx-text-fill: white;" styleClass="transparent-background" text="x 3">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="fxAmount1" editable="false" focusTraversable="false" layoutX="30.0" layoutY="104.0" prefHeight="38.0" prefWidth="48.0" style="-fx-text-fill: white;" styleClass="transparent-background" text="x 4">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ap21" layoutX="646.0" layoutY="8.0" prefHeight="142.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="70.0" prefHeight="30.0" prefWidth="122.0" scaleShape="false">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Pane pickOnBounds="false" prefHeight="200.0" prefWidth="200.0" styleClass="ships" />
+                              <Pane pickOnBounds="false" prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="1" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="2" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="3" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </GridPane>
+                        <GridPane layoutX="100.0" layoutY="35.0" prefHeight="30.0" prefWidth="92.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="1" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="2" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </GridPane>
+                        <GridPane layoutX="130.0" layoutY="70.0" prefHeight="30.0" prefWidth="62.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" GridPane.columnIndex="1" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </GridPane>
+                        <GridPane layoutX="160.0" layoutY="105.0" prefHeight="30.0" prefWidth="40.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="ships" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </GridPane>
+                        <TextField fx:id="fxAmount41" editable="false" focusTraversable="false" layoutX="22.0" layoutY="-6.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="48.0" style="-fx-text-fill: white;" styleClass="transparent-background" text="1 x">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="fxAmount31" editable="false" focusTraversable="false" layoutX="52.0" layoutY="31.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="38.0" prefWidth="48.0" style="-fx-text-fill: white;" styleClass="transparent-background" text="2 x">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="fxAmount21" editable="false" focusTraversable="false" layoutX="83.0" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="38.0" prefWidth="48.0" style="-fx-text-fill: white;" styleClass="transparent-background" text="3 x">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="fxAmount11" editable="false" focusTraversable="false" layoutX="113.0" layoutY="101.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="38.0" prefWidth="48.0" style="-fx-text-fill: white;" styleClass="transparent-background" text="4 x">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <Pane prefHeight="156.0" prefWidth="146.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="156.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/man.jpg" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="846.0" layoutY="1.0" prefHeight="156.0" prefWidth="146.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="156.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/komp.png" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <ProgressBar fx:id="fxWinProbability" focusTraversable="false" layoutX="396.0" layoutY="60.0" prefWidth="200.0" progress="0.5" />
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="382.0" layoutY="26.0" style="-fx-text-fill: white;" styleClass="transparent-background" text="Вероятность победы:">
+                     <font>
+                        <Font name="Modern No. 20" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+.transparent-background {
+    -fx-background-color:rgba(0, 0, 0, 0.0);
+}
+
+.buttons:hover {
+    -fx-text-fill:linear-gradient(#a1f1ff, #010049);
+}
+.ships {
+    -fx-border-width: 0.5;
+    -fx-border-color: darkblue;
+    -fx-background-color: lightskyblue;
+}
+
+
+
